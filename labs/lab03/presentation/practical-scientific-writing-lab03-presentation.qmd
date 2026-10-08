@@ -32,9 +32,9 @@ date-format: "YYYY-MM-DD"
 
 ## Inline и Display
 
-Строчная формула:
+Строчная(inline) формула:
 
-```latex id="hflzlx"
+```latex
 $y = mx + c$
 ```
 
@@ -42,9 +42,9 @@ $y = mx + c$
 
 $y = mx + c$
 
-Выключная формула:
+Выключная(display) формула:
 
-```latex id="wlb47w"
+```latex
 \[
 y = mx + c
 \]
@@ -56,7 +56,7 @@ $$
 
 ## Индексы и функции
 
-```latex id="0gdrxj"
+```latex
 $a^{b}$
 
 $a_{b}$
@@ -76,13 +76,13 @@ $y = 2 \sin \theta^{2}$
 
 Подключение пакета:
 
-```latex id="2m8uaz"
+```latex
 \usepackage{amsmath}
 ```
 
 Несколько уравнений:
 
-```latex id="e0qdmo"
+```latex
 \begin{align*}
 a &= b + 1 \\
 c &= d + 2
@@ -91,7 +91,7 @@ c &= d + 2
 
 ## Матрицы
 
-```latex id="9vrxyc"
+```latex
 \[
 \begin{pmatrix}
 a & b & c \\
@@ -115,13 +115,13 @@ $$
 
 Одна формула была записана в двух режимах:
 
-```latex id="8ct5nl"
+```latex
 $5^{2}=3^{2}+4^{2}$
 ```
 
 и
 
-```latex id="pv6bgi"
+```latex
 \[
 5^{2}=3^{2}+4^{2}
 \]
@@ -139,7 +139,7 @@ $$
 
 Добавлены строчные и прописные греческие буквы:
 
-```latex id="2f5cmh"
+```latex
 $\alpha, \beta, \gamma, \theta$
 
 $\Gamma, \Delta, \Omega$
@@ -169,13 +169,13 @@ $\mathtt{ABC}$
 
 Проверены параметры класса документа:
 
-```latex id="81a76y"
+```latex"
 \documentclass[fleqn]{article}
 ```
 
 `fleqn` размещает выключные формулы по левому краю.
 
-```latex id="h7gsv4"
+```latex
 \documentclass[leqno]{article}
 ```
 
@@ -193,7 +193,5 @@ $\mathtt{ABC}$
 - Проверены параметры `fleqn` и `leqno`
 
 # Заключение
-
-## Главный вывод
 
 Освоены основные способы набора и оформления математических формул в LaTeX.
