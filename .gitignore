@@ -364,3 +364,11 @@ plugins
 .vbox/
 .config/
 vm/
+
+
+#release file
+/labs/lab01/release
+help.md
+
+#vscode
+.DS_Store
