@@ -367,7 +367,7 @@ vm/
 
 
 #release file
-/labs/lab01/release
+/labs/*/release
 help.md
 
 #vscode
