@@ -1,9 +1,9 @@
 ---
 ## Author
 author:
-  name: Дмитрий Сергеевич Кулябов
-  degrees: DSc
-  orcid: 0000-0002-0877-7063
+  name: Филибер Никола
+  degrees: Магистратура
+  orcid: 0000-0000-0000-0000
   email: kulyabov-ds@rudn.ru
   affiliation:
     - name: Российский университет дружбы народов
