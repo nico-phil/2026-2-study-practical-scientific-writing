@@ -12,7 +12,7 @@ author:
       city: Москва
       address: ул. Миклухо-Маклая, д. 6
 ## Title
-title: "Лабораторной работе №4"
+title: "Графики в LaTex"
 subtitle: "Computer Skills for Scientific Writing"
 license: CC BY
 date: today
@@ -47,11 +47,6 @@ date-format: "YYYY-MM-DD" # Example: 2025-09-06
 
 - Использование графики повышает наглядность научных и технических документов.
 - LaTeX предоставляет средства для удобного добавления, оформления и размещения изображений
-
-
-## Объект и предмет исследования
-
-- Оформление графических материалов в LaTeX.
 
 
 ## Цели и задачи
@@ -113,6 +108,18 @@ Some text
 ```
 ##
 ![Имененме размеров изображение](image/screen2.png){#fig-002 width=70%}
+
+## масштабирование изображениия
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\begin{document}
+  \begin{center}
+    \includegraphics[scale = 0.7, height = 0.5\textheight]{dog1.jpg}
+  \end{center}
+\end{document}
+```
 
 ##
 ![масштабирование изображениия](image/screen3.png){#fig-003 width=70%}
@@ -179,6 +186,7 @@ Some text
 ```
 
 ## Создание подписей и перекрёстных ссылок
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -194,9 +202,9 @@ Text of material for the first subsection.
     e^{i\pi}+1 = 0
     \label{eq:labeltwo}
 \end{equation}
-In subsection~\ref{subsec:labelone} is
-equation~\ref{eq:labeltwo}.
+In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 \end{document}
+
 ```
 
 ##
@@ -209,8 +217,6 @@ equation~\ref{eq:labeltwo}.
 
 
 # Заключение
-
-## Главный вывод
 
 В ходе лабораторной работы были изучены основные способы работы с графикой в LaTeX. Освоены вставка и настройка изображений, работа с плавающими объектами и создание перекрёстных ссылок.
 
