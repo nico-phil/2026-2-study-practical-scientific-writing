@@ -4,7 +4,7 @@ author:
   name: Филибер Никола
   degrees: Магистратура
   orcid: 0000-0000-0000-0000
-  email:
+  email: 1132259430@rudn.ru
   affiliation:
     - name: Российский университет дружбы народов
       country: Российская Федерация
