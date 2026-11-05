@@ -1,10 +1,10 @@
 ---
 ## Author
 author:
-  name: Дмитрий Сергеевич Кулябов
-  degrees: DSc
-  orcid: 0000-0002-0877-7063
-  email: kulyabov-ds@rudn.ru
+  name: Филибер Никола
+  degrees: Магистратура
+  orcid: 0000-0000-000-000
+  email: 1132259430@rudn.ru
   affiliation:
     - name: Российский университет дружбы народов
       country: Российская Федерация
@@ -13,44 +13,51 @@ author:
       address: ул. Миклухо-Маклая, д. 6
 
 ## Title
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-license: "CC BY"
+title: "Отчёт по лабораторной работе №5"
+subtitle: "Computer Skills for Scientific Writing"
 abstract: |
-  В данном отчёте представлены результаты выполнения лабораторной работы по теме ...
-
-  Описаны использованные методы, полученные экспериментальные данные и их анализ.
-
-  Сделаны выводы о достижении поставленной цели.
-keywords: [лабораторная работа, шаблон, Markdown, Pandoc]
+  Данная лабораторная работа посвящена созданию и оформлению таблиц в LaTeX. Рассматривается использование окружения tabular и пакетов array, booktabs, tabularx и longtable. Основные темы включают выравнивание столбцов, оформление границ, объединение ячеек, настройку ширины столбцов и создание многостраничных таблиц
+keywords: [Latex, tabular, array, booktabs, форматирование таблиц.]
 ---
 
 # Введение
 
 ## Актуальность
 
-Здесь обосновывается, почему данная работа важна, какое место она занимает в курсе или в научной проблематике.
+Таблицы широко используются в научных и технических документах для структурированного представления данных. LaTeX позволяет создавать таблицы различной сложности, обеспечивая точное выравнивание, гибкую настройку и профессиональное оформление. Освоение этих инструментов важно для подготовки качественных научных работ, отчётов и публикаций.
 
 ## Цель работы
 
-Здесь приводится формулировка цели лабораторной работы.
-Формулировки цели для каждой лабораторной работы приведены в методических указаниях.
-
-Цель данного шаблона --- максимально упростить подготовку отчётов по лабораторным работам.
-Модифицируя данный шаблон, студенты смогут без труда подготовить отчёт по лабораторным работам, а также познакомиться с основными возможностями разметки Markdown.
+Изучить основные способы создания и форматирования таблиц в LaTeX, освоить настройку столбцов, выравнивание данных, объединение ячеек и использование специальных пакетов для оформления сложных и многостраничных таблиц.
 
 
 ## Задачи
 
-Перечисляются конкретные шаги, которые необходимо выполнить для достижения цели.
+- Изучить основные принципы создания таблиц в LaTeX.
+
+- Освоить использование окружения tabular и пакета array.
+
+- Научиться настраивать выравнивание и ширину столбцов.
+
+- Изучить оформление таблиц с помощью пакета booktabs.
+
+- Освоить объединение ячеек с помощью команды `\multicolumn`.
+
+- Изучить создание таблиц заданной ширины с помощью tabularx.
+
+- Научиться создавать многостраничные таблицы с помощью longtable.
+
+- Рассмотреть способы настройки интервалов и оформления содержимого таблиц.
 
 ## Объект и предмет исследования
 
-Кратко описывается, что исследуется и в каком аспекте.
+Объект исследования: процесс создания и оформления таблиц в системе LaTeX.
+
+Предмет исследования: инструменты и методы форматирования таблиц в LaTeX, включая настройку столбцов, выравнивание данных, объединение ячеек и использование специализированных пакетов.
 
 ## Методы исследования
 
-Указываются основные методы, используемые в работе (экспериментальные, расчётные, моделирование и т.д.).
+В работе используются методы изучения теоретического материала, анализа примеров кода LaTeX и практического экспериментирования. Проводится сравнение различных способов создания и форматирования таблиц, проверка работы команд и пакетов array, booktabs, tabularx и longtable, а также анализ полученных результатов.
 
 ## Схема выполнения работы
 
@@ -62,13 +69,18 @@ keywords: [лабораторная работа, шаблон, Markdown, Pandoc
 ```{mermaid}
 %%| fig-width: 100%
 graph TD
-    A@{ shape: circle, label: "Начало" } --> B[Выполнить действие]
-    B --> C[Описать, что конкретно сделано]
-    C --> D[Подтвердить скриншотом]
-    D --> E[Занести в отчёт]
-    E --> F[Поместить в git-репозиторий]
-    F --> G[Сделать релиз git]
-    G --> J@{ shape: dbl-circ, label: "Конец" }
+    A@{ shape: circle, label: "Начало" } --> B[ Изучить основы созданиятаблиц в LaTeX]
+    B --> C[ Создать простую таблицу спомощью tabular ]
+    C --> D[ Настроить выравнивание и ширину столбцов]
+    D --> E[ Оформить таблицу спомощью booktabs ] 
+    E --> F[ Изучить объединение ячеек ]
+    F --> G[ Создать таблицы спомощью tabularx иlongtable ]
+    G --> H[ Настроить интервалы и оформление таблиц ]
+    H --> I[ Проверить результаты компиляции ]
+    I --> J[ Добавить примеры ирезультаты в отчёт ]
+    J --> K[ Поместить отчёт вgit-репозиторий ]
+    K --> L[ Создать релиз git ]
+    L --> M@{ shape: dbl-circ, label: "Конец" }
 ```
 
 Блок-схема выполнения лабораторной работы
@@ -77,82 +89,670 @@ graph TD
 
 # Теоретическая часть
 
-Здесь излагаются теоретические сведения, необходимые для понимания работы. Это может быть описание файловой системы, алгоритмов, физических законов и т.п.
+В табл. -@tbl-latex-table приведено краткое описание основных пакетов и команд LaTeX для работы с графикой.
 
-Например, в табл. -@tbl-std-dir приведено краткое описание стандартных каталогов Unix.
+| Пакеты & команды                | Описание                                                  |
+|---------------------------------|-----------------------------------------------------------|
+| tabular                         |  Окружение для таблиц                 |
+| array                           | Пакет настройки столбцов     |
+| l, c, r                         | Типы выравнивания              |
+| p, m, b                         | Типы столбцов |
+| booktabs                        | Пакет оформления линий              |
+| `\toprule`                      | Команда верхней линии                                |
+| `\midrule`                      | Команда средней линии            |
+| `\bottomrule`                   | Команда нижней линии         |
+| `\cmidrule`                     | Команда частичной линии                           |
+| `\addlinespace`                 | Команда добавления отступа        |
+| `\multicolumn`                   | Команда объединения столбцов                      |
+| `\tabcolsep`                     | Параметр отступов                   |
+| `tabular*`                    | Окружение заданной ширины                  |
+| `\extracolsep`                 | Команда настройки отступов                            |
+| `tabularx`                             | Пакет и окружение таблиц|
+| `longtable`                             | Пакет и окружение многостраничных таблиц|
+| `threeparttable`                             | Пакет и окружение примечаний|
+| `\newcolumntype`                | Команда создания типа столбца |
+| `>, <`                          | Модификаторы столбцов |
+| `\arraystretch`.                | Параметр интервала строк |
+: описание основных пакетов и команд LaTeX для работы с таблицами {#-@tbl-latex-table}
 
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую систему                                                                       |
-| `/bin`       | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя `root`                                                                                    |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
+Более подробно LaTeX в [@latex_doc; @practical_scientific_writing].
 
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl-std-dir}
-
-Более подробно про Unix см. в [@tanenbaum_book_modern-os_ru; @robbins_book_bash_en; @zarrelli_book_mastering-bash_en; @newham_book_learning-bash_en].
 
 # Материалы и методы
 
-В этом разделе описывается, как именно выполнялась работа:
+Материалы и программное обеспечение: компьютер(Macbook), система LaTeX[@latex_doc], текстовый редактор[@vscode] и учебные материалы[@practical_scientific_writing] по оформлению таблиц, git[@git_doc], github[@github_doc].
 
-- оборудование, программное обеспечение, реактивы;
-- последовательность действий, настройки параметров;
-- методы сбора и обработки данных.
+Методы: анализ примеров, сравнение способов форматирования и визуальная оценка полученных таблиц.
 
 
 # Выполнение лабораторной работы
 
-Описываются проведённые действия.
+## Пакет array
+Для создания таблицы в LaTeX необходимо указать количество столбцов и способ выравнивания их содержимого.
 
-Каждый шаг документируется скриншотом (рис. -@fig-001).
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{tabular}{lll}
+  Animal & Food & Size \\
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+\end{tabular}
+\end{document}
+``` 
+![Простая таблица с выравниванием по левому краю ](image/img1.png){#fig-001 width=70%}
 
-![V Сольвеевский конгресс (1927) «Электроны и фотоны»](image/solvay.jpg){#fig-001 width=70%}
+###
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{tabular}{rrr}
+  Animal & Food & Size \\
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+\end{tabular}
+\end{document}
+``` 
+![Простая таблица с выравниванием по провому краю](image/img2.png){#fig-002 width=70%}
 
-Каждый скриншот должен иметь подпись.
-На каждый скриншот должна быть ссылка.
+
+###
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{tabular}{ccc}
+  Animal & Food & Size \\
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+\end{tabular}
+\end{document}
+``` 
+![Простая таблица с выравниванием по центру](image/img3.png){#fig-003 width=70%}
+
+
+### Таблицы с большим объёмом текста
+Если столбец таблицы содержит большой объём текста, использование типов l, c и r может привести к проблемам с форматированием. Для решения этой проблемы применяется тип столбца p{width}, который позволяет задать фиксированную ширину, автоматически переносить текст на новые строки и выравнивать содержимое по верхнему краю ячейки.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{tabular}{cp{9cm}}
+  Animal  & Description \\
+  dog     & The dog is a member of the genus Canis, which forms part of the wolf-like canids and is the most widely abundant terrestrial carnivore. \\
+  cat     & The cat is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. \\
+\end{tabular}
+\end{document}
+```
+
+![Таблицы с большим объёмом текста](image/img4.png){#fig-004 width=70%}
+
+### Cоздание таблицу с использованием конструкцию `*{num}{string}`
+Для упрощения создания таблиц можно использовать конструкцию `*{num}{string}`, которая повторяет заданный тип столбца указанное количество раз. Например, `*{3}{c}` эквивалентно ccc и создаёт шесть столбцов с выравниванием по центру.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{tabular}{*{3}{l}}
+  Animal & Food & Size \\
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+\end{tabular}
+\end{document}
+```
+
+![таблица с выравниванием по центру](image/img5.png){#fig-005 width=70%}
+
+## Добавление линий в таблицы с помощью пакета booktabs
+
+Пакет booktabs предоставляет четыре команды для создания горизонтальных линий в таблицах. Основные из них: `\toprule` — верхняя линия, `\midrule` — промежуточная и `\bottomrule` — нижняя. Каждая команда должна располагаться в начале строки или после другой линии.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food & Size \\
+  \midrule
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![Таблица с горизонтальным линиями](image/img6.png){#fig-006 width=70%}
+
+###
+Команда `\cmidrule` позволяет создавать горизонтальные линии, охватывающие только указанные столбцы таблицы. Диапазон задаётся в формате {начало-конец}, например, `\cmidrule{1-3}`.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food & Size \\
+  \midrule
+  dog & meat & medium \\
+  \cmidrule{1-2}
+  horse & hay & large \\
+  \cmidrule{1-1}
+  \cmidrule{3-3}
+  frog & flies & small \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![горизонтальные линии с `\cmidrule` ](image/img7.png){#fig-007 width=70%}
+
+### Добавление отступа
+Команда `\addlinespace` позволяет добавить небольшой вертикальный отступ между строками таблицы.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{cp{9cm}}
+  \toprule
+  Animal & Description \\
+  \midrule
+  dog & The dog is a member of the genus Canis, which forms
+  part of the wolf-like canids, and is the most widely abundant terrestrial  carnivore. \\
+  \addlinespace
+  cat & The cat is a domestic species of small carnivorous
+  mammal. It is the only domesticated species in the family Felidae and is often referred
+  to as the domestic cat to distinguish it from the wild members of the↪ family. \\
+\bottomrule
+\end{tabular}
+\end{document}
+```
+
+![вертикальный отступ](image/img8.png){#fig-008 width=70%}
+
+## Объединение ячеек таблицы
+В LaTeX для горизонтального объединения ячеек используется команда `\multicolumn`, которая принимает три аргумента:
+1. Количество объединяемых столбцов.
+2. Выравнивание содержимого.
+3. Содержимое объединённой ячейки.
+
+Например, `\multicolumn{2}{c}{Текст}` объединяет два столбца с выравниванием по центру.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food & Size \\
+  \midrule
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+  fuath & \multicolumn{2}{c}{unknown} \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![Объединение ячеек](image/img9.png){#fig-009 width=70%}
+
+###
+Команду `\multicolumn` можно использовать для одной ячейки, чтобы изменить заданное выравнивание столбца. Например, `\multicolumn{1}{c}{Текст}` позволяет выровнять заголовок таблицы по центру.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food} &
+  \multicolumn{1}{c}{Size} \\↪
+  \midrule
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+  fuath & \multicolumn{2}{c}{unknown} \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![Заголовок таблицы по центру](image/img10.png){#fig-010 width=70%}
+
+###
+LaTeX не поддерживает вертикальное объединение ячеек стандартными средствами. Вместо этого можно оставлять ячейки пустыми, создавая визуальный эффект объединения строк.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Group & Animal & Size \\
+  \midrule
+  herbivore & horse & large \\
+  \addlinespace
+            & deer & medium \\
+            & rabbit & small \\
+  carnivore & dog & medium \\
+            & cat & small \\
+            & lion & large \\
+  \addlinespace
+    omnivore  & crow & small \\
+              & bear & large \\
+              & pig & medium \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![Таблица с пустыми ячейками](image/img11.png){#fig-011 width=70%}
+
+## Дополнительные параметры настройки столбцов таблицы.
+
+### Форматирование столбца таблицы
+Символы `>` и `<` позволяют добавлять команды форматирования до и после содержимого ячеек столбца. Например, с их помощью можно выделить текст первого столбца курсивом и добавить двоеточие после каждого значения.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+  \toprule
+  Animal & Food & Size \\
+  \midrule
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![Форматирование столбца таблицы](image/img12.png){#fig-012 width=70%}
+
+###
+Чтобы форматирование столбца не применялось к заголовку, можно использовать команду `\multicolumn`. Она позволяет изменить оформление и выравнивание отдельной ячейки.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+  \toprule
+  \multicolumn{1}{l}{Animal} & Food & Size \\
+  \midrule
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![выравнивание отдельной ячейки](image/img14.png){#fig-014 width=70%}
+
+## Настройка расстояния между столбцами таблицы
+В LaTeX расстояние между столбцами задаётся параметром `\tabcolsep`. Между соседними столбцами оно составляет `2\tabcolsep`. Изменить значение можно с помощью команды `\setlength{\tabcolsep}`{1cm}
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\setlength\tabcolsep{1cm}
+\begin{document}
+\begin{tabular}{lll}
+  Animal & Food & Size \\
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+\end{tabular}
+\end{document}
+```
+
+![Настройка расстояния между столбцами](image/img15.png){#fig-015 width=70%}
+
+## Вертикальные линии в таблицах
+Символ | добавляет вертикальную линию между столбцами, сохраняя отступы. Однако вертикальные линии несовместимы с горизонтальными линиями пакета booktabs.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{tabular}{l|ll}
+  Animal & Food & Size \\[2pt]
+  dog & meat & medium \\
+  horse & hay & large \\
+  frog & flies & small \\
+\end{tabular}
+\end{document}
+```
+
+![Таблица с вертиклной линии](image/img16.png){#fig-016 width=70%}
+
+
+## Настройка горизонтальных линий с помощью пакета booktabs
+Команды пакета booktabs позволяют настраивать толщину линий с помощью необязательного аргумента в квадратных скобках. Команда `\cmidrule` также позволяет регулировать отступы по краям линии с помощью параметров r и l
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{@{} lll@{}} \toprule[2pt]
+  Animal & Food & Size \\ \midrule[1pt]
+  dog & meat & medium \\
+  \cmidrule[0.5pt](r{1pt}l{1cm}){1-2}
+  horse & hay & large \\
+  frog & flies & small \\ \bottomrule[2pt]
+\end{tabular}
+\end{document}
+```
+
+![Настройка горизонтальных линий с помощью пакета booktabs](image/img17.png){#fig-017 width=70%}
+
+## Выравнивание числовых данных в столбцах таблицы
+Для выравнивания числовых данных в таблицах используется тип столбца S из пакета siunitx. Он позволяет автоматически выравнивать числа по десятичному разделителю.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\begin{document}
+\begin{tabular}{SS}
+  \toprule
+  {Values} & {More Values} \\
+  \midrule
+  1 & 2.3456 \\
+  1.2 & 34.2345 \\
+  -2.3 & 90.473 \\
+  40 & 5642.5 \\
+  5.3 & 1.2e3 \\
+  0.2 & 1e4 \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+
+![выравнивания числовых данных в таблицах](image/img18.png){#fig-018 width=70%}
+
+
+## Настройка общей ширины таблицы
+Ширина таблицы в окружении tabular определяется автоматически по её содержимому. Для задания фиксированной ширины используются `tabular*` и `tabularx`. Рекомендуется настраивать ширину таблицы напрямую, при необходимости уменьшая шрифт с помощью `\small`, вместо масштабирования командой `\resizebox`
+
+### tabular*
+Окружение tabular* позволяет задать общую ширину таблицы. Команда `\extracolsep{\fill} `автоматически распределяет свободное пространство между столбцами для достижения заданной ширины.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{center}
+\begin{tabular}{cc}
+  \hline
+  A & B\\
+  C & D\\
+  \hline
+  \end{tabular}
+  \end{center}
+  \begin{center}
+  \begin{tabular*}{.5\textwidth}{@{\extracolsep{\fill}}cc@{}}
+  \hline
+  A & B\\
+  C & D\\
+  \hline
+\end{tabular*}
+```
+![задать общую ширину таблицы `\extracolsep{\fill}`](image/img19.png){#fig-019 width=70%}
+
+
+## tabularx
+Окружение tabularx позволяет автоматически настраивать ширину столбцов типа X в пределах заданной ширины таблицы. В отличие от tabular*, оно изменяет ширину самих столбцов, а не расстояние между ними.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\begin{document}
+\begin{center}
+\begin{tabular}{lp{2cm}}
+  \hline
+  A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+  C & D D D D D D D\\
+  \hline
+  \end{tabular}
+  \end{center}
+  \begin{center}
+  \begin{tabularx}{.5\textwidth}{lX}
+  \hline
+  A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+  C & D D D D D D D\\
+\hline
+\end{tabularx}
+\end{center}
+\begin{center}
+\begin{tabularx}{\textwidth}{lX}
+  \hline
+  A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+  C & D D D D D D D\\
+  \hline
+\end{tabularx}
+\end{center}
+\end{document}
+```
+
+![Автоматически настраивать ширину столбцов](image/img20.png){#fig-020 width=70%}
+
+## Многостраничные таблицы
+Окружение tabular не поддерживает перенос таблицы на следующую страницу. Для создания многостраничных таблиц используется пакет longtable, который позволяет автоматически разбивать таблицу на несколько страниц.
+
+```latex
+\documentclass{article}
+\usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\begin{document}
+\begin{longtable*}{cc}
+\multicolumn{2}{c}{A Long Table}\\
+Left Side & Right Side\\
+\hline
+\endhead
+\hline
+\endfoot
+aa & bb\\
+Entry & b\\
+a & b\\
+a & b\\
+a & b\\
+a & b\\
+a & bbb\\
+a & b\\
+a & b\\
+a & b\\
+a & b\\
+a & b\\
+a & b\\
+a & b b b b b b\\
+a & b b b b b\\
+a & b b\\
+A Wider Entry & b\\
+\end{longtable*}
+\end{document}
+```
+
+![Многостраничные таблицы](image/img21.png){#fig-021 width=70%}
+
+
+## Примечания к таблицам
+Пакет threeparttable позволяет добавлять примечания под таблицей с помощью специальных сносок. Ширина блока примечаний автоматически соответствует ширине таблицы.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{threeparttable}
+\begin{document}
+\begin{table}
+\begin{threeparttable}
+\caption{An Example}
+\begin{tabular}{ll}
+  An entry & 42\tnote{1}\\
+  Another entry & 24\tnote{2}\\
+\end{tabular}
+\begin{tablenotes}
+  \item [1] the first note.
+  \item [2] the second note.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\end{document}
+```
+
+![Примечания под таблицей](image/img22.png){#fig-022 width=70%}
+
+## Форматирование текста в узких столбцах таблицы
+
+```latex
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{ragged2e}
+\begin{document}
+\begin{table}
+\begin{tabular}[t]{lp{3cm}}
+One & A long text set in a narrow paragraph, with some more example text.\\
+Two & A different long text set in a narrow paragraph, with some more hard to hyphenate words.
+\end{tabular}
+\begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
+One & A long text set in a narrow paragraph, with some more example text.\\
+Two & A different long text set in a narrow paragraph, with some more hard to hyphenate words.
+\end{tabular}
+\begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
+One & A long text set in a narrow paragraph, with some more
+example text.\\
+Two & A different long text set in a narrow paragraph, with some more hard to hyphenate words.
+\end{tabular}
+\footnotesize
+\begin{tabular}[t]{lp{3cm}}
+One & A long text set in a narrow paragraph, with some more
+example text.\\
+Two & A different long text set in a narrow paragraph, with
+some more hard to hyphenate words.
+\end{tabular}
+\end{table}
+\end{document}
+```
+![Форматирование текста в узких столбцах таблицы](image/img23.png){#fig-023 width=70%}
+
+## Приёмы вертикального форматирования ячеек таблицы
+Вместо вертикального объединения ячеек можно использовать вложенные окружения tabular, позволяющие разделять содержимое ячейки на несколько строк.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
+\begin{document}
+\begin{tabular}{lcc}
+  \toprule
+  Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} &
+  \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
+  \midrule
+  Content & is & here \\
+  Content & is & here \\
+  Content & is & here \\
+\bottomrule
+\end{tabular}
+\end{document}
+```
+
+![содержимое ячейки на несколько строк](image/img24.png){#fig-024 width=70%}
+
+## Настройка межстрочных интервалов в таблицах
+
+Для настройки межстрочных интервалов в таблицах используются параметры `\arraystretch` и `\extrarowheight`. Первый изменяет расстояние между строками, а второй увеличивает их высоту.
+
+```latex
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\begin{document}
+\begin{center}
+\begin{tabular}{cc}
+\hline
+Square& $x^2$\\
+\hline
+Cube& $x^3$\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}
+\setlength\extrarowheight{2pt}
+\begin{tabular}{cc}
+\hline
+Square& $x^2$\\
+\hline
+Cube& $x^3$\\
+\hline
+\end{tabular}
+\end{center}
+\end{document}
+```
+
+![Настройка межстрочных интервалов в таблицах](image/img25.png){#fig-025 width=70%}
+
 
 # Результаты
 
-Здесь приводятся объективные данные, полученные в ходе работы.
-Это могут быть таблицы с измерениями, графики, выводы программ, скриншоты.
-Без интерпретации --- только констатация фактов.
+В ходе лабораторной работы изучены основные способы создания и форматирования таблиц в LaTeX. Рассмотрены выравнивание столбцов, настройка ширины и интервалов, объединение ячеек, оформление линий, а также создание многостраничных таблиц с использованием специализированных пакетов.
 
 # Обсуждение результатов
 
-В этом разделе проводится анализ полученных результатов:
-
-- сопоставление с теоретическими ожиданиями;
-- сравнение с данными других авторов;
-- объяснение возможных отклонений, погрешностей;
-- практическая значимость результатов.
+Рассмотренные примеры показали, что LaTeX позволяет гибко управлять структурой и оформлением таблиц. Использование пакетов array, booktabs, tabularx и longtable упрощает работу со сложными таблицами. Выбор подходящих инструментов помогает улучшить читаемость и качество оформления научных документов.
 
 # Заключение
 
-Кратко, по пунктам, перечисляются главные итоги работы:
-
-- Достигнута ли поставленная цель;
-- Какие конкретные результаты получены;
-- Рекомендации по применению или направления для дальнейших исследований.
+В ходе лабораторной работы изучены основные инструменты создания и форматирования таблиц в LaTeX. Освоены способы настройки столбцов, объединения ячеек, оформления линий и создания многостраничных таблиц. Полученные знания могут быть использованы при подготовке научных работ и технической документации.
 
 # Список литературы {.unnumbered}
 
 ::: {#refs}
 :::
 
-\appendix
-
-# Что выносится в приложения {.appendix}
-
-При необходимости сюда выносятся:
-
-- листинги программ;
-- большие таблицы с исходными данными;
-- промежуточные выкладки;
-- акты внедрения и т.п.
-
-Каждое приложение начинается с новой страницы и имеет заголовок (например, «Приложение А. Листинг программы»).
