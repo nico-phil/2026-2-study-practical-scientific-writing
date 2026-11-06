@@ -65,7 +65,7 @@ date-format: "YYYY-MM-DD" # Example: 2025-09-06
 - Задачи:
     - Изучить основные принципы создания таблиц в LaTeX.
 
-    - Изучить оформление таблиц с помощью пакета booktabs.
+    - Изученить способов добавления вертикальных и горизонтальных линий в таблицы LaTeX.
 
     - Научиться создавать многостраничные таблицы с помощью longtable.
 
@@ -575,6 +575,7 @@ LaTeX не поддерживает вертикальное объединен�
 Для создания многостраничных таблиц используется пакет longtable, который позволяет автоматически разбивать таблицу на несколько страниц.
 
 ##
+
 ```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
@@ -609,6 +610,7 @@ A Wider Entry & b\\
 \end{document}
 ```
 
+##
 ![Многостраничные таблицы](image/img21.png){#fig-021 width=70%}
 
 
@@ -639,42 +641,6 @@ A Wider Entry & b\\
 ```
 ##
 ![Примечания под таблицей](image/img22.png){#fig-022 width=70%}
-
-## Форматирование текста в узких столбцах таблицы
-
-```latex
-\documentclass[a4paper]{article}
-\usepackage[T1]{fontenc}
-\usepackage{array}
-\usepackage{ragged2e}
-\begin{document}
-\begin{table}
-\begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more hard to hyphenate words.
-\end{tabular}
-\begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more hard to hyphenate words.
-\end{tabular}
-\begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
-One & A long text set in a narrow paragraph, with some more
-example text.\\
-Two & A different long text set in a narrow paragraph, with some more hard to hyphenate words.
-\end{tabular}
-\footnotesize
-\begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more
-example text.\\
-Two & A different long text set in a narrow paragraph, with
-some more hard to hyphenate words.
-\end{tabular}
-\end{table}
-\end{document}
-```
-
-##
-![Форматирование текста в узких столбцах таблицы](image/img23.png){#fig-023 width=70%}
 
 ## Приёмы вертикального форматирования ячеек таблицы
 Вместо вертикального объединения ячеек можно использовать вложенные окружения tabular, позволяющие разделять содержимое ячейки на несколько строк.
