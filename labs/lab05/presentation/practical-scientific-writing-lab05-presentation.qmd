@@ -51,13 +51,6 @@ date-format: "YYYY-MM-DD" # Example: 2025-09-06
 - Освоение этих инструментов важно для подготовки качественных научных работ, отчётов и публикаций.
 
 
-## Объект и предмет исследования
-
-- Процесс создания и оформления таблиц в системе LaTeX.
-
-- Инструменты и методы форматирования таблиц в LaTeX, включая настройку столбцов, выравнивание данных, объединение ячеек и использование специализированных пакетов.
-
-
 ## Цели и задачи
 
 - Цель:
@@ -73,9 +66,12 @@ date-format: "YYYY-MM-DD" # Example: 2025-09-06
 
 ## Материалы и методы
 
-- Материалы и программное обеспечение: компьютер(Macbook), система LaTeX, текстовый редактор и учебные материалы по оформлению таблиц, git, github.
-
-- Методы: анализ примеров, сравнение способов форматирования и визуальная оценка полученных таблиц.
+- Процессор Latex
+- cli pdflatex
+- git
+- github
+- Процессор pandoc (как часть quarto) для входного формата Markdown
+- Автоматизация процесса создания: Makefile
 
 # Выполнение лабораторной работы
 
@@ -641,67 +637,6 @@ A Wider Entry & b\\
 ```
 ##
 ![Примечания под таблицей](image/img22.png){#fig-022 width=70%}
-
-## Приёмы вертикального форматирования ячеек таблицы
-Вместо вертикального объединения ячеек можно использовать вложенные окружения tabular, позволяющие разделять содержимое ячейки на несколько строк.
-
-##
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{array}
-\usepackage{booktabs}
-\begin{document}
-\begin{tabular}{lcc}
-  \toprule
-  Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} &
-  \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
-  \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
-\bottomrule
-\end{tabular}
-\end{document}
-```
-##
-![содержимое ячейки на несколько строк](image/img24.png){#fig-024 width=70%}
-
-## Настройка межстрочных интервалов в таблицах
-
-Для настройки межстрочных интервалов в таблицах используются параметры `\arraystretch` и `\extrarowheight`. Первый изменяет расстояние между строками, а второй увеличивает их высоту.
-
-##
-```latex
-\documentclass[a4paper]{article}
-\usepackage[T1]{fontenc}
-\usepackage{array}
-\begin{document}
-\begin{center}
-\begin{tabular}{cc}
-\hline
-Square& $x^2$\\
-\hline
-Cube& $x^3$\\
-\hline
-\end{tabular}
-\end{center}
-\begin{center}
-\setlength\extrarowheight{2pt}
-\begin{tabular}{cc}
-\hline
-Square& $x^2$\\
-\hline
-Cube& $x^3$\\
-\hline
-\end{tabular}
-\end{center}
-\end{document}
-```
-
-##
-![Настройка межстрочных интервалов в таблицах](image/img25.png){#fig-025 width=70%}
-
 
 
 # Результаты
